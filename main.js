@@ -30,3 +30,11 @@ storyWords.forEach(word => {
         sentenceCount++;
     }
 });
+// Instruction 6
+function logInfo() {
+    console.log(`Word count: ${wordCount}, Sentence count: ${sentenceCount}, Over used word count: ${oUWC}.`);
+};
+
+logInfo();
+// Instruction 7
+console.log(betterWords.join(' '));
