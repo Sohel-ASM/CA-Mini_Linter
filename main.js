@@ -8,3 +8,17 @@ let storyWords = story.split(' ');
 let wordCount = storyWords.length;
 // Instruction 3 
 let betterWords = storyWords.filter(word => !unnecessaryWords.includes(word));
+// Instruction 4
+//oUWC = over used word counter.
+let oUWC = 0;
+
+for (let i = 0; i < betterWords.length; i++) {
+    for (let j = 0; j < overusedWords.length; j++) {
+        if (betterWords[i] === overusedWords[j]) {
+            oUWC++;
+            if (oUWC % 2 === 0) { // project extension 1
+                betterWords.splice(i, 1);
+            }
+        }
+    }
+};
