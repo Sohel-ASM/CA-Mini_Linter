@@ -22,3 +22,11 @@ for (let i = 0; i < betterWords.length; i++) {
         }
     }
 };
+// Instruction 5
+let sentenceCount = 0;
+
+storyWords.forEach(word => {
+    if (word[word.length - 1] === '.' || word[word.length - 1] === '!') {
+        sentenceCount++;
+    }
+});
